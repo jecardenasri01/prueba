@@ -25,7 +25,7 @@ namespace pruebapage.page
 
         public void Buscarvuelo(vuelo vuelo)
         {
-            comun.comun.esperar(driver);
+           // comun.comun.esperar(driver);
 
             AceptarAlerta();
             escribirCiudadOrigen(vuelo.ciudadOrigen);
@@ -48,7 +48,7 @@ namespace pruebapage.page
         public void AceptarAlerta()
         {
 
-            if ((btnsalir == null) && (btnsalir.Displayed))
+            if ((btnsalir.Displayed))
             {
                 System.Threading.Thread.Sleep(15000);
             }
